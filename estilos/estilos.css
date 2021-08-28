@@ -8,6 +8,7 @@
     --grey: #BABABA;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
+    --gray-primary: #757575;
 }
 
 *{
@@ -101,4 +102,162 @@ header figure{
     
 }
 
+main{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    background-color: var(--off-white);
+}
+
+.section__trading__container{
+    width: 100%;
+    position: relative;
+    min-width: 320px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+    
+}
+
+.section__trading_image{
+
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+    background-image: url('../assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.section-trading__text__container{
+    
+    width: 288px;
+    margin: 0 auto;
+    
+}
+
+.section__trading_title{
+
+    width: 288px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 30px;
+    color: var(--warm-black);
+
+}
+
+.section__trading_text{
+    width: 288px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 40px;
+    color: var(--gray-primary)
+}
+
+.section__trading_currency{
+    width: 81px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: #FF9536;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    
+}
+
+.section__table_container{
+    width: 288px;
+    margin: 0 auto;
+}
+
+.section__table_container table{
+    
+    width: 50%;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: var(--gray-primary);
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.section__table_container td{
+    
+    background-color: var(--just-white);
+    min-width: 101px;
+    padding: 10px 12px;
+
+}
+
+.section__table_icon-down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    background-image: url('../assets/icons/trending-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.section__table_icon-up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    background-image: url('../assets/icons/trending-up.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.section__table_border-up-left{
+
+    border-radius: 8px;
+
+}
+
+.section__table_border-up-right{
+
+    border-radius: 8px;
+
+}
+.section__table_border-down-left{
+
+    border-radius: 8px;
+
+}
+.section__table_border-down-right{
+
+    border-radius: 8px;
+
+}
+
+.section__trading_date{
+
+    width: 65%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: var(--soft-orange);
+    margin-bottom: 15px;
+    color: var(--warm-black-1);
+}
+
+.section__trading_date strong{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
 
