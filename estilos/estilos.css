@@ -173,13 +173,14 @@ main{
 }
 
 .section__table_container{
-    width: 288px;
+    min-width: 320px;
+    max-width: 330px;
     margin: 0 auto;
 }
 
 .section__table_container table{
     
-    width: 50%;
+    width: 70%;
     text-align: justify;
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -196,13 +197,14 @@ main{
     min-width: 101px;
     padding: 10px 12px;
 
+
 }
 
 .section__table_icon-down{
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-left: 8px;
+    margin-left: 12px;
     background-image: url('../assets/icons/trending-down.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -213,7 +215,7 @@ main{
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-left: 8px;
+    margin-left: 12px;
     background-image: url('../assets/icons/trending-up.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -244,7 +246,8 @@ main{
 
 .section__trading_date{
 
-    width: 65%;
+    min-width: 180px;
+    max-width: 200px;
     font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -252,12 +255,155 @@ main{
     padding: 10px;
     margin: 0 auto;
     background-color: var(--soft-orange);
-    margin-bottom: 15px;
+    margin-bottom: 70px;
     color: var(--warm-black-1);
+    border-radius: 15px;
 }
 
 .section__trading_date strong{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
 }
+
+.benefits{
+    width: 100%;
+    height: auto;
+    background-color: var(--warm-black);
+    padding: 50px 0;
+}
+
+.benefits__title{
+    width: 288px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.benefits__title__main{
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 15px;
+
+}
+
+.benefits__title__secondary{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+    
+}
+
+.benefits__card{
+    width: 288px;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: justify;
+    background-color: var(--warm-black-1);
+
+}
+
+.benefits__card__final{
+    width: 288px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: var(--warm-black-1);
+
+}
+
+.benefits__card__time{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/icons/clock.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+.benefits__card__view{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/icons/eye.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.benefits__card__currency{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/icons/dollar-sign.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.benefits__card__secure{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../assets/icons/check-circle.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.benefits__card__title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    
+}
+
+.benefits__card__description{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.plans{
+    width: 100%;
+    min-width: 320px;
+    height: 30vh;
+    background-image: url('../assets/img/bitcoinbabyx2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+.plans__title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    padding-top: 60px;
+
+}
+
+
+
 
