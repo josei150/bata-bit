@@ -657,5 +657,30 @@ main{
 
 }
 
+    /* width: 151px;
+    height: 50px;
+    background-color: var(--off-white);
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: var(--bit-orage);
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+} */
+
+.choose-plan__card button span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    
+
+}
 
 
