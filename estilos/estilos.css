@@ -139,6 +139,7 @@ main{
     width: 288px;
     margin: 0 auto;
     
+    
 }
 
 .section__trading_title{
@@ -168,14 +169,41 @@ main{
     line-height: 2.3rem;
     color: #FF9536;
     margin-bottom: 10px;
-    padding-left: 50px;
+    padding-left: 20px;
     
 }
+
+.section__trading_commmissions{
+    width: 81px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secundary-blue);
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+
 
 .section__table_container{
     min-width: 320px;
     max-width: 330px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.table__currency{
+
+    width: 100%;
+    padding: 0 15px 0 35px;
+    align-content: center;
+    scroll-snap-align: center;
+    
+
 }
 
 .section__table_container table{
@@ -194,8 +222,8 @@ main{
 .section__table_container td{
     
     background-color: var(--just-white);
-    min-width: 101px;
-    padding: 10px 12px;
+    min-width: 115px;
+    padding: 10px 10px;
 
 
 }
@@ -204,7 +232,7 @@ main{
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-left: 12px;
+    margin-left: 10px;
     background-image: url('../assets/icons/trending-down.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -260,16 +288,46 @@ main{
     border-radius: 15px;
 }
 
+.section__commissions_date{
+
+    min-width: 180px;
+    max-width: 200px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: var(--soft-blue);
+    margin-bottom: 70px;
+    color: var(--warm-black-1);
+    border-radius: 15px;
+}
+
 .section__trading_date strong{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
 }
 
 .benefits{
+    position: relative;
     width: 100%;
     height: auto;
     background-color: var(--warm-black);
     padding: 50px 0;
+}
+
+.benefits .papa{
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 50px/2);
+    bottom: calc(100% - 50px/2);
+    background-image: url('../assets/icons/batata.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .benefits__title{
@@ -297,7 +355,10 @@ main{
 }
 
 .benefits__card{
-    width: 288px;
+    width: 70%;
+    min-width: 288px;
+    max-width: 350px;
+    height: 180px;
     padding: 15px;
     margin: 10px auto;
     text-align: justify;
@@ -306,7 +367,10 @@ main{
 }
 
 .benefits__card__final{
-    width: 288px;
+    width: 70%;
+    min-width: 288px;
+    max-width: 350px;
+    height: 180px;
     padding: 15px;
     margin: 0 auto;
     text-align: justify;
@@ -384,6 +448,7 @@ main{
 }
 
 .plans{
+    
     width: 100%;
     min-width: 320px;
     height: 30vh;
@@ -404,6 +469,193 @@ main{
 
 }
 
+.choose-plan{
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+.choose-plan__title__container{
+    width: 288px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.choose-plan__title__main{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin-bottom: 15px;
+}
+
+.choose-plan__title__secondary{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    color: var(--gray-primary);
+    margin-bottom: 20px;
+}
+
+.choose-plan__card__container{
+    display: flex;
+    height: auto;
+    width: 230px;
+    min-width: 230px;
+    max-width: 250px;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    
+}
+
+.recommended{
+    position: absolute;
+    width: 101px;
+    height: 31px;
+    padding: 8px 0;
+    left: calc(50% - 101px/2);
+    top: calc(0% - 31px);
+    background-color: var(--bit-orage);
+    color: var(--just-white);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    
+}
+
+.choose-plan__card{
+    width: 100%;
+    height: 300px;
+    scroll-snap-align: center;
+    position: relative;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.choose-plan__card__text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choose-plan__plan{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.choose-plan__price{
+
+    position: relative;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.choose-plan__price span{
+    position: absolute;
+    top: calc(10%);
+    right: calc(80% - 10px);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.choose-plan__price__benefit{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    color: var(--gray-primary);
+    margin-bottom: 15px;
+}
+
+.choose-plan__card button{
+
+    width: 151px;
+    height: 50px;
+    background-color: var(--off-white);
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: var(--bit-orage);
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+
+.choose-plan__card button span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    
+
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    height: 150px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bit-orage);
+
+}
+
+.footer__container--left{
+    width: 50%;
+    
+}
+
+.footer__container--right{
+    width: 50%;
+    
+}
+
+.footer__list{
+    list-style: none;
+}
+
+.footer__list a{
+
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin: 10px 0;
+
+
+}
 
 
 
